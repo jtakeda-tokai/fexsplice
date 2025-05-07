@@ -1,0 +1,8 @@
+# FexSplice prediction with annotation (tab-separated file format)
+Column 1: chromosome number
+Column 2: position on genome
+Column 3: reference nucleotide
+Column 4: altered nucleotide
+Column 5: strand (1:+, -1:-)
+Column 6: FexSplice prediction (0~1, pathogenic >= 0.5)
+Column 7: Gene name, ID and exon No. based on Ensembl release 101 (the same exons are connected by "||")
