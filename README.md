@@ -1,4 +1,5 @@
 # FexSplice (hg19/hg38)
+### :warning: This site temporarily stores data for the web service ([FexSplice](https://www.med.nagoya-u.ac.jp/neurogenetics/FexSplice/)), which is currently unavailable.
 ## Abstract
 FexSplice predicts a splicing consequence of a single nucleotide variation (SNV) at the first nucleotide of an exon (Fex-SNV). FexSplice predicts the splicing effect of Fex-SNV only when the first nucleotide in the reference sequence is G. Probabilities are ranged from 0 (no effect on splicing) to 1 (impact on the splicing of the downstream exon). Fex-SNV with a probability less than 0.5 is predicted to be splicing-insensitive, while those with a probability of 0.5 or more are predicted to be splicing-affecting. When two or more transcripts exist at an SNV, FexSplice predicts the effects of splicing for all the relevant transcripts.
 ## Details
