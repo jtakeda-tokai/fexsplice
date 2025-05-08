@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-870YFV54KL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-870YFV54KL');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>FexSplice top</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <!-- jQuery (necessary for Bootstrap\'s JavaScript plugins) -->
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed-->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- header -->
+  <div id="header" class="container">
+    <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href=index.html>Top</a>
+      <a class="navbar-brand" href=about.html>About</a>
+      <a class="navbar-brand" href=download.html>Download</a>
+    </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h1>FexSplice</h1>
+      <p>
+FexSplice predicts a splicing consequence of a single nucleotide variation (SNV) at the first nucleotide of an exon (Fex-SNV). FexSplice predicts the splicing effect of Fex-SNV only when the first nucleotide in the reference sequence is G. Probabilities are ranged from 0 (no effect on splicing) to 1 (impact on the splicing of the downstream exon). Fex-SNV with a probability less than 0.5 is predicted to be splicing-insensitive, while those with a probability of 0.5 or more are predicted to be splicing-affecting. When two or more transcripts exist at an SNV, FexSplice predicts the effects of splicing for all the relevant transcripts. Pre-processed genome-wide scores of FexSplice are available under the “Download” tab.
+      <br />
+      </p>
+    </div>
+
+    <form action="main.php" method="post">
+      Genome assembly version&nbsp;
+      <select name="ver">
+        <option value="hg19">GRCh37/hg19</option>
+        <option value="hg38">GRCh38/hg38</option>
+      </select><br>
+
+      Genomic coordinate&nbsp;Chr
+      <select name="chr">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="X">X</option>
+        <option value="Y">Y</option>
+      </select>
+      :
+
+      <input type="number" min="1" max="249250621" name="pos" value=""/>&nbsp;
+      <!--
+        /data1/tool/IGVTools/genomes/hg19.chrom.sizes: chr1    249250621
+        /data1/tool/IGVTools/genomes/hg38.chrom.sizes: chr1    248956422
+      -->
+
+      <input type="submit" value="Submit" class="btn btn-info" onClick="document.all('moji').style.visibility='visible'"/>
+      <input type="reset" value="Reset" class="btn btn-info">
+
+      <br><br>
+Example: g.63918136C>A on chromosome 17 (GRCh38/hg38) in <i>GH1</i> causes aberrant splicing, whereas g.72345550C>T on chromosome 15 (GRCh38/hg38) in <i>HEXA</i> does not cause aberrant splicing (Fu <i>et al</i>. <i>Nucleic Acids Res</i>, 39: 4396-4404, 2011).
+      <br><br>
+
+    </form>
+  </body>
+</html>
+
