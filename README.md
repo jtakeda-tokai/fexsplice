@@ -12,6 +12,6 @@ Figure 1. AG-dependent and AG-independent 3’ splice sites (ss). Introns with a
 ## Citation
 Joudaki A, Takeda J, Masuda A, Ode R, Fujiwara K, Ohno K. FexSplice: a LightGBM-based model for predicting the splicing effect of a single nucleotide variant affecting the first nucleotide G of an exon. Genes. 14(9): 1765, 2023 ([PMID: 37761905](https://pubmed.ncbi.nlm.nih.gov/37761905/))
 ## Related tools
-[InMeRF (hg38)](https://github.com/jtakeda-tokai/inmerf_hg38.git)\
-[InMeRF (hg19)](https://github.com/jtakeda-tokai/inmerf_hg19.git)\
-[IntSplice2 (hg19/hg38)](https://github.com/jtakeda-tokai/intsplice2.git)
+- [InMeRF (hg38)](https://github.com/jtakeda-tokai/inmerf_hg38.git): To predict the pathogenicity of nonsynonymous SNVs (nsSNVs).
+- [InMeRF (hg19)](https://github.com/jtakeda-tokai/inmerf_hg19.git): To predict the pathogenicity of nonsynonymous SNVs (nsSNVs).
+- [IntSplice2 (hg19/hg38)](https://github.com/jtakeda-tokai/intsplice2.git): To predict the pathogenicity of SNVs occurring at positions -50 to -3 upstream of the 3' splice site of introns.
